@@ -1,4 +1,4 @@
-name: Roq Site Deploy
+name: Pedro Hos Blog Deploy
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate Roq Site
+      - name: Generate Pedro Hos Blog
         uses: quarkiverse/quarkus-roq@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}   # Used to automatically get the GitHub Pages url
